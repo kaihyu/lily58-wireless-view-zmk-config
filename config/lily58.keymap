@@ -32,7 +32,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        Nav {
+        nav {
             bindings = <
 &none       &kp F1        &kp F2        &kp F3            &kp F4            &kp F5                                   &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10     &kp F11
 &bt BT_PRV  &bt BT_NXT    &bt BT_CLR    &kp F8            &kp LS(F8)        &kp LEFT_PARENTHESIS                     &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none       &kp F12
