@@ -23,13 +23,23 @@
             display-name = "Base";
             bindings = <
 &mt ESCAPE GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                           &kp N6       &kp N7  &kp N8      &kp N9   &kp N0    &kp MINUS
-&lt 2 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                                            &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
+&lt 1 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                                            &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
 &kp LCTRL         &kp A   &kp S   &kp D     &kp F     &kp G                                            &kp H        &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X   &kp C     &kp V     &kp B            &kp ESCAPE       &kp BACKSLASH  &kp N        &kp M   &kp COMMA   &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                  &kp LALT  &kp LGUI  &mt LCTRL SPACE  &kp BACKSPACE    &kp ENTER      &lt 2 SPACE  &none   &kp DELETE
+                                  &kp LALT  &kp LGUI  &mt LCTRL SPACE  &kp BACKSPACE    &kp ENTER      &lt 1 SPACE  &none   &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Nav {
+            bindings = <
+&none       &kp F1        &kp F2        &kp F3            &kp F4            &kp F5                                   &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10     &kp F11
+&bt BT_PRV  &bt BT_NXT    &bt BT_CLR    &kp F8            &kp LS(F8)        &kp LEFT_PARENTHESIS                     &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none       &kp F12
+&kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp LEFT_BRACE                           &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &kp DELETE  &none
+&kp LSHIFT  &none         &none         &kp C_AC_BACK     &kp C_AC_FORWARD  &kp LEFT_BRACKET      &none       &none  &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none       &none
+                                        &none             &kp LGUI          &kp SPACE             &kp BSPC    &none  &none                  &kp DELETE   &none
+            >;
         };
 
         num-func {
@@ -50,16 +60,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        Nav {
-            bindings = <
-&trans      &kp F1        &kp F2        &kp F3            &kp F4          &kp F5                                  &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
-&bt BT_PRV  &bt BT_NXT    &bt BT_CLR    &kp F8            &kp LS(F8)      &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans   &kp F12
-&trans      &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_BRACE                          &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &trans   &trans
-&trans      &trans        &trans        &none             &none           &kp LEFT_BRACKET      &trans    &trans  &kp RIGHT_BRACKET      &kp HOME     &kp END       &trans         &trans   &trans
-                                        &trans            &trans          &trans                &trans    &trans  &trans                 &trans       &trans
-            >;
         };
 
         lower_layer {
