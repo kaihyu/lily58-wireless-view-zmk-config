@@ -38,7 +38,7 @@
 &none       &none         &none         &kp F8          &kp LS(F8)        &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
 &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
 &kp LSHIFT  &none         &none         &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_BRACKET      &none       &none      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
-                                        &none           &kp LGUI          &kp SPACE             &kp BSPC    &kt ENTER  &none                  &kp DELETE   &none
+                                        &none           &kp LGUI          &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp DELETE   &none
             >;
         };
 
