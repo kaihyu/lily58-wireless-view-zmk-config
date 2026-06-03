@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Main-Win {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -22,23 +22,46 @@
 
             display-name = "Base";
             bindings = <
-&mt ESCAPE GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6       &kp N7  &kp N8      &kp N9   &kp N0    &kp MINUS
-&lt 1 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                                              &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
-&kp LCTRL         &kp A   &kp S   &kp D     &kp F     &kp G                                              &kp H        &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z   &kp X   &kp C     &kp V     &kp B            &kp ESCAPE         &kp BACKSLASH  &kp N        &kp M   &kp COMMA   &kp DOT  &kp FSLH  &mt RIGHT_SHIFT EQUAL
-                                  &kp LALT  &kp LGUI  &mt LCTRL SPACE  &lt 2 BACKSPACE    &lt 3 ENTER    &lt 1 SPACE  &none   &kp DELETE
+&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6       &kp N7  &kp N8      &kp N9   &kp N0    &kp MINUS
+&lt 2 TAB  &kp Q   &kp W   &kp E     &kp R     &kp T                                              &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                              &kp H        &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B            &kp ESCAPE         &kp BACKSLASH  &kp N        &kp M   &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                           &kp LALT  &kp LGUI  &mt LCTRL SPACE  &lt 4 BACKSPACE    &lt 5 ENTER    &lt 2 SPACE  &mo 6   &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        nav {
+        Main-Mac {
+            display-name = "Base";
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4        &kp N5                                                    &kp N6       &kp N7  &kp N8      &kp N9   &kp N0    &kp MINUS
+&lt 2 TAB  &kp Q   &kp W   &kp E      &kp R         &kp T                                                     &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
+&kp LCMD   &kp A   &kp S   &kp D      &kp F         &kp G                                                     &kp H        &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C      &kp V         &kp B                   &kp ESCAPE         &kp BACKSLASH  &kp N        &kp M   &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                           &kp LCTRL  &kp LEFT_ALT  &mt LEFT_COMMAND SPACE  &lt 4 BACKSPACE    &lt 5 ENTER    &lt 3 SPACE  &mo 6   &kp DELETE
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Nav-Win {
             bindings = <
 &none       &kp F1        &kp F2        &kp F3          &kp F4            &kp F5                                       &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
-&none       &none         &none         &kp F8          &kp LS(F8)        &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
+&none       &kp F8        &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
 &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
-&kp LSHIFT  &none         &none         &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_BRACKET      &none       &none      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
-                                        &none           &kp LGUI          &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp DELETE   &none
+&kp LSHIFT  &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)         &kp LEFT_BRACKET      &none       &none      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
+                                        &none           &kp LGUI          &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp ENTER    &none
+            >;
+        };
+
+        Nav-Mac {
+            bindings = <
+&none         &kp F1     &kp F2        &kp F3          &kp F4            &kp F5                                       &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
+&none         &kp F8     &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_META     &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
+&kp LSHIFT    &kp LG(Z)  &kp LG(X)     &kp LG(C)       &kp LG(V)         &kp LEFT_BRACKET      &none       &none      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
+                                       &none           &kp LEFT_ALT      &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp ENTER    &none
             >;
         };
 
@@ -64,11 +87,31 @@
 
         Symbols {
             bindings = <
-&none           &none            &none         &none             &none           &none                                         &none                  &none            &none              &none                 &none                  &none
-&none           &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4                                  &none                  &none            &bt BT_CLR         &none                 &none                  &kp BACKSLASH
-&kp TILDE       &kp EXCLAMATION  &kp AT        &kp HASH          &kp DOLLAR      &kp PERCENT                                   &kp CARET              &kp AMPERSAND    &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&kp LEFT_SHIFT  &none            &none         &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &none            &none  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &none                 &kp QUESTION           &none
-                                               &none             &kp ENTER       &kp SPACE             &kp BACKSPACE    &none  &kp SPACE              &none            &none
+&none           &none            &none   &none             &none           &none                                         &none                  &none            &none              &none                 &none                  &none
+&none           &none            &none   &none             &none           &none                                         &none                  &none            &none              &none                 &none                  &kp BACKSLASH
+&kp TILDE       &kp EXCLAMATION  &kp AT  &kp HASH          &kp DOLLAR      &kp PERCENT                                   &kp CARET              &kp AMPERSAND    &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&kp LEFT_SHIFT  &none            &none   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &none            &none  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &none                 &kp QUESTION           &none
+                                         &none             &kp ENTER       &kp SPACE             &kp BACKSPACE    &none  &kp SPACE              &none            &none
+            >;
+        };
+
+        Bluetooth-Win {
+            bindings = <
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &bt BT_CLR  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                         &none       &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                         &none       &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none    &to 1  &none       &none  &none  &none  &none  &none
+                                   &none         &none         &none         &none    &none  &none       &none  &none
+            >;
+        };
+
+        Bluetooth-Mac {
+            bindings = <
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &bt BT_CLR  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                         &none       &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none                         &none       &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none    &to 0  &none       &none  &none  &none  &none  &none
+                                   &none         &none         &none         &none    &none  &none       &none  &none
             >;
         };
     };
