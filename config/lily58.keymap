@@ -44,7 +44,7 @@
 &none       &kp F1        &kp F2        &kp F3          &kp F4            &kp F5                                       &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
 &none       &kp F8        &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
 &kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
-&kp LSHIFT  &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)         &kp LEFT_BRACKET      &none       &to 1 &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
+&kp LSHIFT  &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)         &kp LEFT_BRACKET      &none       &to 1      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
                                         &none           &kp LGUI          &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp ENTER    &none
             >;
         };
@@ -55,7 +55,7 @@
 &none         &kp F1     &kp F2        &kp F3          &kp F4            &kp F5                                       &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
 &none         &kp F8     &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
 &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_META     &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
-&kp LSHIFT    &kp LG(Z)  &kp LG(X)     &kp LG(C)       &kp LG(V)         &kp LEFT_BRACKET      &to 0  &none      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
+&kp LSHIFT    &kp LG(Z)  &kp LG(X)     &kp LG(C)       &kp LG(V)         &kp LEFT_BRACKET      &none       &to 0      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
                                        &none           &kp LEFT_ALT      &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp ENTER    &none
             >;
         };
