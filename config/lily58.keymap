@@ -16,7 +16,7 @@
             display-name = "Base Win";
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                             &kp N6       &kp N7  &kp N8      &kp N9   &kp N0    &kp MINUS
-&lt 2 TAB  &kp Q   &kp W   &kp E     &kp R     &kp T                                              &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
+&lt 4 TAB  &kp Q   &kp W   &kp E     &kp R     &kp T                                              &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                              &kp H        &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B            &kp ESCAPE         &kp BACKSLASH  &kp N        &kp M   &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                            &kp LALT  &kp LGUI  &mt LCTRL SPACE  &lt 4 BACKSPACE    &lt 4 ENTER    &lt 2 SPACE  &mo 5   &kp DELETE
@@ -29,7 +29,7 @@
             display-name = "Base Mac";
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4        &kp N5                                            &kp N6       &kp N7  &kp N8      &kp N9   &kp N0    &kp MINUS
-&lt 3 TAB  &kp Q   &kp W   &kp E      &kp R         &kp T                                             &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
+&lt 4 TAB  &kp Q   &kp W   &kp E      &kp R         &kp T                                             &kp Y        &kp U   &kp I       &kp O    &kp P     &kp EQUAL
 &kp LCMD   &kp A   &kp S   &kp D      &kp F         &kp G                                             &kp H        &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C      &kp V         &kp B           &kp ESCAPE         &kp BACKSLASH  &kp N        &kp M   &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                            &kp LCTRL  &kp LEFT_ALT  &mt LGUI SPACE  &lt 4 BACKSPACE    &lt 0 ENTER    &lt 3 SPACE  &mo 5   &kp DELETE
@@ -41,10 +41,10 @@
         Nav-Win {
             display-name = "Nav Win";
             bindings = <
-&none       &kp F1        &kp F2        &kp F3          &kp F4            &kp F5                                       &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
-&none       &kp F8        &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
-&kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
-&kp LSHIFT  &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)         &kp LEFT_BRACKET      &none       &to 1      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
+&none       &none         &none         &none           &none             &none                                        &none                  &none        &none         &none          &none  &none
+&none       &kp F8        &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none  &none
+&kp LCTRL   &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL         &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none  &kp DEL
+&kp LSHIFT  &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)         &kp LEFT_BRACKET      &none       &to 1      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none  &none
                                         &none           &kp LGUI          &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp ENTER    &none
             >;
         };
@@ -52,10 +52,10 @@
         Nav-Mac {
             display-name = "Nav Mac";
             bindings = <
-&none         &kp F1     &kp F2        &kp F3          &kp F4            &kp F5                                       &kp F6                 &kp F7       &kp F8        &kp F9         &kp F10  &kp F11
-&none         &kp F8     &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none    &kp F12
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_META     &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none    &kp DEL
-&kp LSHIFT    &kp LG(Z)  &kp LG(X)     &kp LG(C)       &kp LG(V)         &kp LEFT_BRACKET      &none       &to 0      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none    &none
+&none         &none      &none         &none           &none             &none                                        &none                  &none        &none         &none          &none  &none
+&none         &kp F8     &kp LS(F8)    &kp C_AC_BACK   &kp C_AC_FORWARD  &kp LEFT_PARENTHESIS                         &kp RIGHT_PARENTHESIS  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none  &none
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_META     &kp LEFT_BRACE                               &kp RIGHT_BRACE        &kp LEFT     &kp DOWN      &kp RIGHT      &none  &kp DEL
+&kp LSHIFT    &kp LG(Z)  &kp LG(X)     &kp LG(C)       &kp LG(V)         &kp LEFT_BRACKET      &none       &to 0      &kp RIGHT_BRACKET      &kp HOME     &kp END       &none          &none  &none
                                        &none           &kp LEFT_ALT      &kp SPACE             &kp BSPC    &kp ENTER  &none                  &kp ENTER    &none
             >;
         };
